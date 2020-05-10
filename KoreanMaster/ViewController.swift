@@ -14,7 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    @IBAction func levelOne() {
+             let vc = storyboard?.instantiateViewController(identifier: "levelOne") as! LevelOneViewController
+             vc.modalPresentationStyle = .fullScreen
+             present(vc, animated: true)
+      }
 }
-
